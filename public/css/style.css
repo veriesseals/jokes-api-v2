@@ -1,0 +1,16 @@
+* {
+    outline: 1px dotted red;
+}
+
+.header-h1 {
+    text-transform:  capitalize;
+}
+
+.colophon{
+    text-transform:  capitalize;
+}
+
+a {
+    color: blue;
+
+}

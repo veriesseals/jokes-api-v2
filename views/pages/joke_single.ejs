@@ -1,0 +1,26 @@
+<%- include('../partials/header'); %>
+
+<!-- Main -->
+<main class="main main-single">
+    <div class="container">
+        <!-- prev and next -->
+        <div class="prev-and-next d-flex justify-content-around">
+            <p class="prev">
+                <% if(data.id > 1) { %> 
+                    <a href="/jokes/<%= data.id -1 %>">Prev</a>
+                <% } %>
+            </p>
+
+            <p class="next">
+                <% if (data.id <= count) { %> 
+                    <a href="/jokes/<%= data.id +1 %>">Next</a>
+                <% } %>
+            </p>
+        </div>
+        <h3><%= data.setup %></h3>
+        <p class="single-punch"><%= data.punchline %></p>
+    </div>
+</main>
+<!-- End Main -->
+
+<%- include('../partials/footer'); %>
